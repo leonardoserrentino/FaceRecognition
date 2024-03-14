@@ -1,0 +1,22 @@
+Hi, this is a brief guide to install the environment for using the file FinalProject.py
+
+Open the terminal on linux machine and write: 
+    sudo apt-get update
+    sudo apt install python3-pip
+    pip3 install -r requirements.txt
+
+After this you are ready to start the model
+
+In the directory 'imgs/' you can save all the user profile pictures with the number ID as the name of the picture, to use it as a reference picture for that specific user.
+
+In order to test the model I used my webcam, in FinalProject.py, line 6, '0' means the ID of my webcam device.
+You should use the datastream from your app, so that in line 25, the while loop, iterate on the video from the user webcam.
+
+To check the verification and liveness I just output 'Verified' and 'Fake' on the stdout stream of terminal, you can send any signal in every way possible.
+
+Every directory name in every file is a relative path, so you can put the project in every directory you wish without worrying about renaming anything.
+
+To call the model you'll need to write on the terminal:
+    python3 "path_to_the_reference_picture" "path_to_the_video"
+
+
